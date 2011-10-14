@@ -1,0 +1,40 @@
+$   git config --global user.name "xiaoxi.meng"
+$   git config --global user.email xiaoxi.meng@gmail.com
+
+$   mkdir Hello-Git
+$   cd Hello-Git
+$   git init
+Initialized empty Git repository in /home/hid/.git/
+
+$   touch README
+$   git add README
+$ git commit -m 'first commit'
+[master (root-commit) 4c6f6b3] first commit
+ 0 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README
+
+$ git remote add origin git@github.com:mengxiaoxi.git
+$ git push -u origin master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 205 bytes, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:mengxiaoxi.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+$ touch README 
+$ git add README
+$ git commit -m 'second commit'
+[master 8acfa5c] second commit
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+$ git push -u origin masterCounting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 293 bytes, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:mengxiaoxi.git
+   4c6f6b3..8acfa5c  master -> master
+Branch master set up to track remote branch master from origin.
+$ 
+
